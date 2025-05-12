@@ -1,0 +1,34 @@
+WEEK ONE (Beginner level): 05 - 12 May 2025
+-------------------------------------------
+    - Section 1: Getting Started with HTML
+        - HTML stands for Hyper Text Markup language, and is used for structuring and presenting content on websites.
+        - The current version is HTML5. HTML versions are standardized by an organization called the World Wide Web Consortium (W3C).
+        - Benefits of HTML 5
+            1. HTML5 provides support for the latest multimedia
+            2. It is easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.).
+            3. Many features of HTML5 have been built to run on low-powered devices such as smartphones and tablets.
+            4. HTML5 is a good language to develop cross-platform mobile applications (applications that work on various devices running various operating systems, such as iOS and Android).
+        - The file extensions used for your webpages are .html or .htm
+    - Section 2: Working with images
+        - In HTML images are defined with the Image tag.
+        - The Image tag contains attributes only, and does not have a closing tag.
+        - The src attribute defines the url (web address) of the image. You can use PNG, JPEG or GIF image files. Make sure you specify the correct image file name in the src attribute.
+    - Section 3: Hyperlinks
+        - A hyperlink is a text or an image you can click on, and jump to another page, website or document.
+        - In HTML, links are defined with the <a> tag
+        - The href attribute specifies the destination address (https://www.itvarsity.org)
+        - The link text is the visible part (visit our website)
+        - Linking an item within the project is called internal linking
+    - Section 1: Getting Started with HTML
+
+WEEK TWO (Beginner level): 12 - 19 May 2025
+-----------------------------------------------------
+    - Section 1: Getting started with CSS
+        - Lesson 1 Introduction to CSS
+            - Cascading Style Sheets, or CSS, is a simple design language that we use to make web pages beautiful and presentable.
+            - Using CSS, you can set the colours, fonts and background images.
+            - CSS is different from HTML, and they both serve completely different functions. Using HTML you create the structure of your page, and with CSS you add colors and styles to your page.
+            - Benefits of CSS
+                - CSS helps your pages load faster
+                - CSS saves time
+                - CSS makes maintaining a site easy
