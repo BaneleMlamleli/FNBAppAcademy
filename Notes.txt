@@ -1,5 +1,5 @@
-WEEK ONE (Beginner level): 05 - 12 May 2025
--------------------------------------------
+WEEK 1 (Beginner level) - Getting started with HTML: 05 - 12 May 2025
+---------------------------------------------------------------------
     - Section 1: Getting Started with HTML
         - HTML stands for Hyper Text Markup language, and is used for structuring and presenting content on websites.
         - The current version is HTML5. HTML versions are standardized by an organization called the World Wide Web Consortium (W3C).
@@ -21,8 +21,8 @@ WEEK ONE (Beginner level): 05 - 12 May 2025
         - Linking an item within the project is called internal linking
     - Section 1: Getting Started with HTML
 
-WEEK TWO (Beginner level): 12 - 19 May 2025
------------------------------------------------------
+WEEK 2 (Beginner level) - Introduction to CSS: 12 - 19 May 2025
+---------------------------------------------------------------
     - Section 1: Getting started with CSS
         - Cascading Style Sheets, or CSS, is a simple design language that we use to make web pages beautiful and presentable.
         - Using CSS, you can set the colours, fonts and background images.
@@ -36,3 +36,6 @@ WEEK TWO (Beginner level): 12 - 19 May 2025
         - The <div> tag must be given an id or a class name. Our CSS will identify a div box by its id or class name.
     - Section 2: Superhero app
         - Practical work section
+
+WEEK 3 (Beginner level) - UX and UI: 19 - 26 May 2025
+-----------------------------------------------------
