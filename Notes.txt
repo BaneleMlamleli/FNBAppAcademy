@@ -39,3 +39,5 @@ WEEK 2 (Beginner level) - Introduction to CSS: 12 - 19 May 2025
 
 WEEK 3 (Beginner level) - UX and UI: 19 - 26 May 2025
 -----------------------------------------------------
+    - Section 1: Setting up
+        - This week we're building a 'Pine City Zoo' application
