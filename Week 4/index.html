@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="heading1">Hey there</h1>
+    <p id="paragraph1">fun!</p>
+    <p id="paragraph2">text</p>
+    <p id="paragraph3">text</p>
+    <p id="paragraph4">text</p>
+    <p id="paragraph5">text</p>
+    <p id="paragraph6">text</p>
+    <p id="output">text</p>
+    <h1 onclick="innerHTML='is awesome'">JavaScript</h1>
+    <h1 id="heading2" onclick="changeText()">JavaScript</h1>
+    <p id="addition">text</p>
+    <p id="general">general</p>
+    <p id="message">message</p>
+
+    <form>
+        <label for="usernameInput">Username:</label><input type="text" id="usernameInput" /><br />
+        <label for="passwordInput">Password:</label><input type="password" id="passwordInput" /><br />
+        <button type="button" onclick="verifyUser()">Submit</button>
+    </form>
+
+    <select id="weather">
+        <option value="sunny">Sunny</option>
+        <option value="windy">Windy</option>
+    </select>
+
+    <script>
+        var text1;
+        var text2;
+        var text3;
+        text1 = "Hello everyone on the planet";
+        text2 = "I love learning JS!";
+        text3 = " JS is awesome!";
+        var numA = 7;
+        var numB = 10;
+        document.getElementById("heading1").innerHTML = (text1);
+        document.getElementById("paragraph1").innerHTML = (text2 + text3);
+        document.getElementById("paragraph2").innerHTML = ("This is JavaScript!");
+        document.getElementById("paragraph3").innerHTML = ("I'm having fun!");
+        document.getElementById("paragraph4").innerHTML = (5 + 5);
+        document.getElementById("paragraph5").innerHTML = (text1);
+        document.getElementById("paragraph6").innerHTML = (numA + " x " + numB + " = " + numA * numB);
+
+        var userInputPassword = "008";
+        var actualPassword = "007";
+        if (userInputPassword == actualPassword) {
+            document.getElementById("output").innerHTML = ("Correct password");
+        } else {
+            document.getElementById("output").innerHTML = ("Incorrect password.Try again");
+        }
+
+        function changeText(param) {
+            if (document.getElementById("heading2").innerHTML == "JavaScript") {
+                document.getElementById("heading2").innerHTML = "JavaScript is fun!";
+            } else {
+                document.getElementById("heading2").innerHTML = "JavaScript";
+
+            }
+        }
+
+        addNumbers(10, 7)
+        function addNumbers(num1, num2) {
+            document.getElementById("addition").innerHTML = num1 + num2;
+        }
+
+        document.getElementById("addition").innerHTML = addNumbers(101, 7);
+        function addNumbers(num1, num2) {
+            return num1 + num2;
+        }
+
+        function verifyUser() {
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+            checkUserCreds(username, password);
+            document.getElementById("general").innerHTML = "Username: " + username + ", Password: " + password;
+        }
+
+        function checkUserCreds(username, password) {
+            var systemUsername = "Bond";
+            var systemPassword = "007";
+            if (username == systemUsername && password == systemPassword) {
+                document.getElementById("message").innerHTML = "Correct.Login you in…";
+            } else {
+                document.getElementById("message").innerHTML = "Username or password are incorrect";
+            }
+        }
+
+        switch (weatherSelected) {
+            case "sunny":
+                advise = "Wear your sunglasses";
+                break;
+            case "windy":
+                advise = "Wear a jacket";
+                break;
+        }
+    </script>
+</body>
+
+</html>
