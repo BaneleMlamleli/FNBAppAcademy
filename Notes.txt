@@ -41,3 +41,16 @@ WEEK 3 (Beginner level) - UX and UI: 19 - 26 May 2025
 -----------------------------------------------------
     - Section 1: Setting up
         - This week we're building a 'Pine City Zoo' application
+    - Finished the 'Pine City Zoo' application
+
+WEEK 4 (Beginner level) - Back-end: 26 May - 02 Jun 2025
+--------------------------------------------------------
+    - Section 1: JavaScript Basics
+        - HTML is used to build the skeleton of any web page or app. CSS is used to improve the appearance of the page.
+        - JavaScript is employed to give added functionality to a webpage or app and make it more dynamic.
+        - Variables are storage containers that can store information away to be used later.
+        - "if" and "else" statements. These are used for conditional statements
+        - Functions are a set of instructions that are grouped together and giving a name
+        - Parameters allow you to feed data into a function to be processed.
+        - Variable scope is where a variable is usable and where it is inaccessible.
+        - The switch statement works very similarly to the "if" statement, except the "switch" statement can  handle multiple options.
