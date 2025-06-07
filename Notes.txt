@@ -54,3 +54,7 @@ WEEK 4 (Beginner level) - Back-end: 26 May - 02 Jun 2025
         - Parameters allow you to feed data into a function to be processed.
         - Variable scope is where a variable is usable and where it is inaccessible.
         - The switch statement works very similarly to the "if" statement, except the "switch" statement can  handle multiple options.
+
+WEEK 5 (Intermediate level) - Back-end: 02 - 09 Jun 2025
+--------------------------------------------------------
+    - The Calculator
