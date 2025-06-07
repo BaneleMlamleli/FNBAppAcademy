@@ -12,7 +12,7 @@
 - HTML
 - CSS
 - NodeJS
-- VCS (GitHub)
+- VCS (Git on GitHub)
 - VSCode
 
 ## More info
