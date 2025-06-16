@@ -57,4 +57,30 @@ WEEK 4 (Beginner level) - Back-end: 26 May - 02 Jun 2025
 
 WEEK 5 (Intermediate level) - Back-end: 02 - 09 Jun 2025
 --------------------------------------------------------
-    - The Calculator
+    - The Calculator App
+
+WEEK 6 (Intermediate level) - API: 09 - 15 Jun 2025
+---------------------------------------------------
+    - Section 1:
+        - URL: https://mysite.itvarsity.org/api/ContactBook/
+        - API Methods used in the App
+            - GET contacts
+                - Parameters: None or a contact id
+                - Return: JSON Array
+                    - All contacts if no parameter is provided
+                    - Returns the single contact id if it is provided in the parameter
+            - (POST)Add contact
+                - Parameters: FormData object
+                - Return:
+                    - Text: "1" if successful
+                    - Text: An error message if not successful
+            - (PUT/PATCH)Edit contact
+                - Parameters: FormData object with an id
+                - Return:
+                    - Text: "1" if successful
+                    - Text: An error message if not successful
+            - (DELETE) Delete contact
+                - Parameters: id of the contact to be Delete
+                - Return:
+                    - Text: "1" if successful
+                    - Text: An error message if not successful
