@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="config.js"></script> -->
+</head>
+
+<body onload="fetchContacts()">
+    <div id="table">Contact loading ...</div>
+    <button id="refresh" type="button">Refresh</button>
+    <button id="addContact" type="button">Add Contact</button>
+    <script src="config.js"></script>
+    <script>
+        function fetchContacts() {
+            fetch(rootPath + "controller/get-contacts/")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    output = "<table>";
+                    for (a in data) {
+                        // output += `<tr>
+                        //     <td><img src="${rootPath}controller/uploads/${data[a].avatar}"></td>
+                        // </tr>`;
+                        output += `<tr onclick="editContact(${data[a].id})">
+                        <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width="100" /></td>
+                        <td> ${data[a].id} </td>
+                        <td> ${data[a].firstname} </td>
+                        <td> ${data[a].lastname} </td>
+                        <td> ${data[a].mobile} </td>
+                        <td> ${data[a].email} </td>
+                        </tr>`;
+                    }
+                    output += "</table>";
+                    document.getElementById("table").innerHTML = output;
+                    document.getElementById("refresh").addEventListener("click", fetchContacts);
+                    document.getElementById("addContact").addEventListener("click", function () {
+                        // window.location.href = rootPath + "controller/get-contacts/add-contacts.html";
+                        window.open("add-contacts.html", "_self");
+                    });
+                })
+                .catch(function (error) {
+                    console.error("Error fetching contacts:", error);
+                    alert("Error fetching contacts: " + error.message);
+                });
+
+        }
+
+        function editContact(id) {
+            window.open("edit-contact.html?id=" + id, "_self");
+        }
+    </script>
+</body>
+
+</html>
